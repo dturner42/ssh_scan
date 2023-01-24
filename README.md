@@ -5,12 +5,9 @@
 
 A SSH configuration and policy scanner
 
-⚠️ Deprecation Notice ⚠️
--------------------------
-
 Mozilla is no longer maintaining the SSH Scan project.
 
-Please fork it to continue development.
+Updated to bypass "pkeys are immutable on OpenSSL 3.0" error.
 
 ## Key Benefits
 
@@ -21,31 +18,18 @@ Please fork it to continue development.
 
 ## Setup
 
-To install and run as a gem, type:
-
-```bash
-gem install ssh_scan
-ssh_scan
-```
-
-To run from a docker container, type:
-
-```bash
-docker pull mozilla/ssh_scan
-docker run -it mozilla/ssh_scan -t sshscan.rubidus.com
-```
-
 To install and run from source, type:
 
 ```bash
 # clone repo
-git clone https://github.com/mozilla/ssh_scan.git
+git clone https://github.com/dturner42/ssh_scan.git
 cd ssh_scan
 
-gem install bundler
+sudo gem install bundler
+sudo bundle update
 bundle install
 
-./bin/ssh_scan
+Add bin dir to your path.
 ```
 
 ## Example Command-Line Usage
