@@ -5,7 +5,7 @@ PATH
       bcrypt_pbkdf (= 1.0.1)
       bindata (= 2.4.3)
       ed25519 (= 1.2.4)
-      net-ssh (= 6.0.2)
+      net-ssh (= 7.0.0)
       netaddr (= 2.0.4)
       sshkey
 
